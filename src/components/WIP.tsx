@@ -6,7 +6,7 @@ export default function WIP() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    let timer;
+    let timer: number;
 
     // Typing speed, deleting speed, or pause duration
     const currentSpeed = isDeleting ? 40 : 100;
