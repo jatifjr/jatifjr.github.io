@@ -32,7 +32,7 @@ export default function WIP() {
   }, [displayText, isDeleting]);
 
   return (
-    <h1>
+    <h1 className="font-mono text-xl">
       {displayText}
       <span className="inline-block w-0.5 h-6 bg-gray-400 align-middle"></span>
     </h1>

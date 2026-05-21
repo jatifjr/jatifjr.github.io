@@ -1,15 +1,26 @@
 @import "tailwindcss";
 
-@layer base {
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+    color: black;
+}
+
+@media (prefers-color-scheme: dark) {
     html,
     body {
-        @apply font-mono bg-white text-black;
+        color: white;
     }
+}
 
-    @media (prefers-color-scheme: dark) {
-        html,
-        body {
-            @apply bg-black text-white;
-        }
-    }
+#root {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
